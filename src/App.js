@@ -18,7 +18,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`https://www.reddit.com/r/${search}.json`)
+      .get(
+        `https://cors-anywhere.herokuapp.com/https://www.reddit.com/r/${search}.json`
+      )
       .then((response) => {
         const posts = response.data.data.children.map((obj) => obj.data);
         setPosts(posts);
