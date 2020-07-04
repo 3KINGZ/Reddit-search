@@ -2,6 +2,9 @@
   background-color: red;
   height: 23px;
   padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .reddit-title {
