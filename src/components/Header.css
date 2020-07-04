@@ -1,0 +1,19 @@
+.header {
+  background-color: red;
+  height: 23px;
+  padding: 20px;
+}
+
+.reddit-title {
+  font-size: 1.5em;
+}
+
+input {
+  margin-left: 10px;
+  border-radius: 3px;
+  height: 18px;
+}
+
+.search-btn {
+  border: none;
+}
