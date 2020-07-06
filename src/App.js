@@ -11,6 +11,7 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState("");
   const input = useRef();
+  let count = 0;
 
   const showRedditSearch = () => {
     setSearch(input.current.value);
@@ -50,6 +51,7 @@ function App() {
       ) : (
         posts.map((post) => (
           <Post
+            key={count++}
             votes={post.ups}
             img={post.thumbnail ? post.thumbnail : Logo}
             link={post.permalink}

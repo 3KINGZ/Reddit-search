@@ -17,7 +17,13 @@ function Post({ votes, img, title, link, author, comments }) {
       <img src={img} alt="image1" />
       <div className="info">
         <div className="title">
-          <a href={`https://www.reddit.com${link}`}>{title}</a>
+          <a
+            href={`https://www.reddit.com${link}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {title}
+          </a>
         </div>
         <div className="author-info">
           Submitted 12 hours ago by <span className="author">{author}</span>
